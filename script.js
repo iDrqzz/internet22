@@ -1,11 +1,15 @@
 // Brayden
 // Current Date: 2024-01-17
 
-let initialNumber = 5;
+let startNumber = 33;
 
-initialNumber = initialNumber * 2;
+for (let i = 0; i < 5; i++) 
+{
+  
+    if (startNumber % 2 !== 0) 
+    {
+        console.log(startNumber);
+    }
 
-let favoriteThing = prompt("What is your favorite thing?");
-
-console.log("initialNumber:", initialNumber);
-console.log("favoriteThing:", favoriteThing);
+    startNumber++;
+}
