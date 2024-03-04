@@ -10,15 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 return name;
             },
             displayMoves: function () {
-                const movesDiv = document.querySelector('.moves');
+                console.log('Moves:');
                 for (let i = 0; i < moves.length; i++) {
-                    const paragraph = document.createElement('p');
-                    paragraph.textContent = moves[i];
-                    movesDiv.appendChild(paragraph);
+                    console.log(moves[i]);
                 }
             }
         };
-
 
         return character;
     }
