@@ -18,13 +18,13 @@ async function bucksRace() {
         }, Math.random() * 10000);
     });
 
+ 
     const results = await Promise.all([runner1Go, runner2Go]);
+
 
     return [results[0], results[1], loser];
 }
 
 bucksRace().then((result) => {
-    console.log("Result of runner1Go:", result[0]);
-    console.log("Result of runner2Go:", result[1]);
     console.log("The loser is:", result[2]);
 });
